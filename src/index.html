@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResumIA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">RESUM<span>IA</span></div>
+    </nav>
+
+    <main class="container">
+      <section class="editor-section">
+        <div class="card">
+          <label for="input-texto">Texto Original</label>
+          <textarea
+            id="input-texto"
+            placeholder="Cole seu texto longo aqui..."
+          ></textarea>
+          <button id="btn-resumir" class="btn-primary">Resumir Texto</button>
+        </div>
+
+        <div class="card">
+          <label for="output-texto">Resumo Gerado</label>
+          <textarea
+            id="output-texto"
+            placeholder="Aguardando processamento..."
+            disabled
+          ></textarea>
+
+          <div class="btn-group-horizontal">
+            <button id="btn-copiar" class="btn-secondary" disabled>
+              Copiar
+            </button>
+            <button id="btn-limpar-resumo" class="btn-warning" disabled>
+              Limpar Resumo
+            </button>
+            <button id="btn-limpar-tudo" class="btn-danger" disabled>
+              Limpar Tudo
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
