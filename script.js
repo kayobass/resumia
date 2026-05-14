@@ -58,9 +58,7 @@ btnResumir.addEventListener("click", async () => {
     outputTexto.style.height = outputTexto.scrollHeight + "px";
   } catch (error) {
     console.error("Erro na requisição:", error);
-    alert(
-      "Erro ao conectar com o servidor. Verifique se o backend está rodando na porta 3405.",
-    );
+    alert("Erro ao conectar com o servidor.");
   } finally {
     btnResumir.innerText = "Gerar Resumo";
     btnResumir.disabled = false;
