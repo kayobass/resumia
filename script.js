@@ -10,6 +10,15 @@ inputTexto.addEventListener("input", function () {
   this.style.height = this.scrollHeight + "px";
 });
 
+window.addEventListener("beforeunload", (event) => {
+  if (!inputTexto.value.trim()) {
+    return;
+  }
+
+  event.preventDefault();
+  event.returnValue = "";
+});
+
 btnResumir.addEventListener("click", async () => {
   const textoParaResumir = inputTexto.value.trim();
 
