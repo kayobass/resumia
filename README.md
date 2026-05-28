@@ -13,6 +13,10 @@
   </p>
 </div>
 
+<div align="center">
+  <p><strong>⚠️ Projeto Deprecado (28/05/2026):</strong> Este projeto foi descontinuado e não está mais sendo mantido. Pode não funcionar com dependências ou APIs atuais. Use por sua conta ou procure alternativas mais recentes.</p>
+</div>
+
 <br/>
 
 ## 📸 Interface do Projeto
